@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="https://kit.fontawesome.com/7f62cd2861.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="animate">
+        <div class="vermelho">
+            <div class="traco">
+                <div class="semicima">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="branco">
+            <div class="tracobaixo">
+                <div class="semibaixo">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="inpdiv">
+            <input class="inp" type="text" name="buscar" placeholder="Buscar Pokemon" id="SearchContent">
+            <button class="enviarBtn" onclick="ApiRequest()"><i class="fa-solid fa-lg fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="sidepok">
+            <div class="card">
+                <div id="pokemon" class="pokemon">
+                    <div class="pokename">
+                        <p id="pokename">Nome do Pokemon</p>
+                        <p id="pokeID">ID: </p>
+                    </div>
+                    <img class="pokeimg" id="pokeimg" src="../assets/Pokebola-pokeball-png-0.png" alt="Pokemon">
+                </div>
+                <div class="pokedata">
+                    <div class="pokeinfo">
+                        <p id="peso">
+                            Peso:
+                        </p>
+                        <p id="alt">
+                            Altura:
+                        </p>
+                    </div>
+                    <div class="divbutton">
+                        <input type="checkbox" name="shinySelector" id="shinySelector" onclick="mudashiny()">
+                        <label for="shinySelector">Shiny</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidestats">
+            <div class="card">
+                <div class="cardStats">
+                    <div class="stat">
+                        <p class="statData"></p>
+                    </div>
+                    <div class="stat">
+                        <p class="statData"></p>
+                    </div>
+                    <div class="stat">
+                        <p class="statData"></p>
+                    </div>
+                    <div class="stat">
+                        <p class="statData"></p>
+                    </div>
+                    <div class="stat">
+                        <p class="statData"></p>
+                    </div>
+                    <div class="stat">
+                        <p class="statData"></p>
+                    </div>
+                    <p>HP</p>
+                    <p>Attack</p>
+                    <p>Defense</p>
+                    <p>Special Attack</p>
+                    <p>Special Defense</p>
+                    <p>Speed</p>
+                </div>    
+            </div>
+            
+        </div>
+
+    </main>
+
+    <script src="../script/index.js"></script>
+</body>
+
+</html>
